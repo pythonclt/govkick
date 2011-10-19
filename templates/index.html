@@ -1,5 +1,24 @@
 {% extends "govkick.html" %}
 
+{% load url from future %}
+
+{% block sidebarTitle%} Home - Welcome {%endblock%}
+{% block sidebarContent%}
+	{% if not user.is_authenticated %}
+	<div id = "1" class = "sidebarChoices"><a href="#login">Login</a> </div>
+	{% endif %}
+	<div id = "2" class = "sidebarChoices"><a href="#how_it_works">Quick Tour</a> </div>
+	<div id = "3" class = "sidebarChoices"><a href="#summary">Summary</a> </div>
+{%endblock%}
+
+{% block sidebarAdminTitle %} Admin Controls {%endblock%}
+
+{% block sidebarAdmin %}
+ 	<div id = 'a1' class = "sidebarChoices adminChoices"><a href="{% url 'accounts.views.manage_users'%}">Manage Users</a> </div>
+	<div id = 'a2' class = "sidebarChoices adminChoices"><a href="{% url 'accounts.views.profile'%}">Edit Organization</a> </div>
+{%endblock%}
+
+
 {% block content %}
-    {{page_title}}
+   <p> {{page_title}} </p>
 {% endblock %}

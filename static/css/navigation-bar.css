@@ -4,7 +4,8 @@
 	width: 100%;
 	padding-left: 1px;
 	float: left;
-	background-color: #0275b4;
+	background-color: black;
+	background-image: url(../img/navigation/bg.png);
 	position:relative;
 }
 
@@ -16,7 +17,7 @@
 #navigation ul li a
 {
 	background-color: black;
-	background-image: url(../images/navigation/bg.png);
+	background-image: url(../img/navigation/bg.png);
 	width: 160px;
 	height: 20px;
 	padding-top: 5px;
@@ -35,8 +36,8 @@
 
 #navigation ul li a:hover
 {
-	background-color:#f8dd98;
-	color: black;
+	background-color:purple;
+	color: white;
 	font-weight: bold;
 	-moz-box-shadow: inset 0 0 1.5px 1.5px grey;
 	-webkit-box-shadow: inset 0 0 1.5px 1.5px grey;
@@ -45,7 +46,7 @@
 }
 
 #navigation ul li a.itemSelected { 
-	background-color: #f8dd98; color: black;
+	background-color: purple; color: white;
 	-moz-box-shadow: inset 0 0 1.5px 1.5px grey;
 	-webkit-box-shadow: inset 0 0 1.5px 1.5px grey;
 	box-shadow: inset 0 0 1.5px 1.5px grey; 
