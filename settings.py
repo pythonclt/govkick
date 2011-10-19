@@ -1,4 +1,5 @@
 # Django settings for govkick project.
+import os
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 ROOT_DIR = os.path.split(PROJECT_DIR)[0]
 
@@ -111,8 +112,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'govkick.urls'
 
-TEMPLATE_DIRS = (
-)
+TEMPLATE_DIRS = ( os.path.join(PROJECT_DIR, 'templates'), )
 
 
 INSTALLED_APPS = (
