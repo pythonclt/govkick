@@ -1,0 +1,166 @@
+<!--- Main CSS --->
+* {
+	margin: 0;
+	padding: 0; }
+
+html {
+	font-size: medium;
+	height: 100% }
+
+body {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 0px;
+	margin-height: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-width: 0px;
+	min-width: 980px; /* keeps divs from overlapping... small window size forces user to scroll horizontally */
+	padding: 0; /* required for Opera */
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-base-color: #5986A8;
+	width: 100%; }
+
+#banner {
+	background-color: #ffffff;
+	color: white;
+	height: 90px;
+	position: relative;
+	width: 100%;
+	z-index: 50; }
+
+	#banner .bannerIEPadder { padding: 0px; }
+
+/* see navigation-bar.css for more details */
+#navigation {
+	float: left;
+	min-width: 980px; /* keeps items from stacking */
+	padding: 0;
+	position: relative;
+	top: 5px;
+	width: 100%;
+	z-index: 100; }
+
+
+
+.contentIEPadder { padding: 0px; }
+
+.footerIEPadder { padding: 5px; }
+
+.IEPadder { padding: 5px;  }
+
+#sidebarTitle, #sidebarAdminTitle {
+	background: #0275b4;
+        width: 183px;
+        position: relative; 
+        top: 3px;
+	border: 1px solid #B9E3FF;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-left: 5px;
+	text-align: left; }
+
+#main {
+	background-color: white;
+	clear: both;
+	float: left;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	top: 50px;
+	width: 980px; }
+
+	#main #sidebar {
+		border: 1px solid grey;
+		float: left;
+		min-height: 400px;
+		position: relative;
+		width: 200px; 
+                padding: 3px; }
+
+		#main #sidebar .sidebarChoices a {
+			border: 1px solid #eaf4f8;
+			color: #555555;
+			display: block;
+			font-weight: bold;
+			text-align: left;
+			text-decoration: none; }
+
+
+			#main #sidebar .sidebarChoices a:hover { background-color: #f8dd98; border: 1px solid #B9E3FF; display:block;}
+
+.sidebarChoicesSelected a { background-color: #f8dd98; border: 1px solid #B9E3FF;}
+
+.sidebarCurrentPage a { background-color: #f8dd98; border: 1px solid #B9E3FF;}
+
+
+/*** styling for most buttons ***/
+.button {
+    padding: 4px 10px 3px 25px;
+    border: solid 1px #aae1fe;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    background-image: url('/static/images/bkg.png');
+    background-repeat: repeat-x;
+    font-size: 11px;
+    height: 16px;
+    text-decoration: none;
+    color: #00008A;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-radius-bottomleft: 5px;
+    -webkit-border-radius-bottomright: 5px;
+    -webkit-border-radius-topleft: 5px;
+    -webkit-border-radius-topright: 5px;
+}
+.button img {
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    border: none;
+}
+.button:hover {
+    color: #7575E8;
+}
+
+
+
+
+
+#main #middle {
+		background-color: white;
+		float: right;
+		height: auto;
+		margin-left: 10px;
+		position: relative;
+		width: 755px;
+		z-index: 50; }
+
+		#main #middle #content {
+			background-color: white;
+			height: auto;
+			position: relative;
+			width: 100%; }
+
+	#main #footer {
+		-moz-box-shadow: inset 0 0 2px 2px #888;
+		-webkit-box-shadow: inset 0 0 2px 2px #888;
+		background-color: #EAF4F8;
+		border: 1px solid gray;
+		box-shadow: inset 0 0 2px 2px #888;
+		clear: both;
+		color: grey;
+		font-size: 10px;
+		padding: 10px;
+		position: relative;
+		width: auto; }
+
+
+.hover {
+	background-color: #eed491;
+	color: black; }
+

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block includes %}
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/navigation-bar.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+{% endblock %}
+
+
+
+
+{% block site_wrapper %}
+
+{% block banner %}
+<div id="banner">
+		<div class="bannerIEPadder">
+        [image goes here]
+		</div>
+</div>
+{% endblock %}
+
+
+{% block navigation%}
+<div id="navigation">
+		{% include "tags/navigation.html" %}
+</div>
+{% endblock %}
+
+<!-- main -->
+{% if user.is_authenticated %}
+		<div id="login_welcome">Welcome, {{ user.first_name|capfirst }} <br/>
+			<a href="/accounts/logout/">logout</a> | 
+			<a href="/accounts/control-panel/">control panel</a>
+		</div>
+{% endif %}
+
+<div id="main">
+    {%block sidebar%}
+    <div id="sidebar" class="IEPadder">
+			<div id="sidebarTitle" class="IEPadder">
+				{% block sidebarTitle %}{%endblock%}
+				<div>
+					{% block sidebarBack %} {%endblock%} 
+				</div>
+			</div>
+    		<div class="IEPadder">
+    			{% block sidebarContent %}{%endblock%}
+    		</div>
+
+
+
+    		{% if user.is_authenticated and is_moderator%}
+	    		<div id="sidebarAdminTitle" class="IEPadder">
+					{% block sidebarAdminTitle %}{%endblock%}
+				</div>
+	    		<div class="IEPadder">
+	    			{% block sidebarAdmin %}{% endblock %}
+	    		</div>
+    		{%endif%}
+	</div>
+    {%endblock%}
+
+    <div id="middle">
+
+
+    	<div id="content">
+
+    		<div class="contentIEPadder">
+    			{% block content %} {% endblock %}
+    		</div>
+
+    	</div>
+    </div>
+
+{% block footer %}
+    <div id="footer">
+    	<div class="footerIEPadder">
+    		[FOOTER GOES HERE]
+    	</div>
+    </div>
+{% endblock %}
+</div>
+{% endblock %}

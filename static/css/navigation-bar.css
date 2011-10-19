@@ -1,0 +1,86 @@
+#navigation ul
+{
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 1px;
+	float: left;
+	background-color: #0275b4;
+	position:relative;
+}
+
+#navigation ul li {
+	display: inline; 
+
+}
+
+#navigation ul li a
+{
+	background-color: black;
+	background-image: url(../images/navigation/bg.png);
+	width: 160px;
+	height: 20px;
+	padding-top: 5px;
+	color: white;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #fffff;
+	border: 1px solid black;
+	font-weight: bold;
+	text-align: center;
+	
+	-moz-box-shadow: inset 0 0 1.5px 1.5px #e6e9ee;
+	-webkit-box-shadow: inset 0 0 1.5px 1.5px #e6e9ee;
+	box-shadow: inset 0 0 1.5px 1.5px #e6e9ee;
+}
+
+#navigation ul li a:hover
+{
+	background-color:#f8dd98;
+	color: black;
+	font-weight: bold;
+	-moz-box-shadow: inset 0 0 1.5px 1.5px grey;
+	-webkit-box-shadow: inset 0 0 1.5px 1.5px grey;
+	box-shadow: inset 0 0 1.5px 1.5px grey;
+
+}
+
+#navigation ul li a.itemSelected { 
+	background-color: #f8dd98; color: black;
+	-moz-box-shadow: inset 0 0 1.5px 1.5px grey;
+	-webkit-box-shadow: inset 0 0 1.5px 1.5px grey;
+	box-shadow: inset 0 0 1.5px 1.5px grey; 
+}
+
+/* Navigation images */
+.image-container { 
+	width: 160px;
+	height: 90px;
+	background-color: black;
+	
+	
+
+	
+	display:none;
+	position: absolute;
+	top: -94px;
+	
+	opacity:0.3;
+	-moz-opacity:0.3;
+	filter:alpha(opacity=30);
+	
+	z-index:75;
+}
+
+.nav-image {
+	display:none;
+	position: absolute;
+	top:-94px;
+	z-index:100;
+}
+
+
+#federal-logo, #federal-container {left: 164px;}
+#state-logo, #state-container {left:326px;}
+#news-logo, #news-container {left:488px;}
+#who-logo, #who-container {left: 650px;}
+#tools-logo, #tools-container {left: 812px;}
