@@ -2,7 +2,7 @@ YOUR FIRST MIGRATION
 
 1.create a new app and create your initial ‘models.py’ file for it
 2. add your app to your project’s INSTALLED_APPS
-3. run ‘python manage.py schemamigration myapp –initial’      (creates your
+3. run ‘./manage.py schemamigration main --initial’      (creates your
 initial migration, note: those are two dashes hyphens before initial)
 4. run ‘python manage.py migrate myapp’     (uses this initial migration to create
 your app’s DB tables)
