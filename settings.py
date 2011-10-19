@@ -157,7 +157,9 @@ LOGGING = {
         },
     }
 }
+
+
 try:
-    from local_settings import *
-except ImportError:
-    pass
+    import this_is_production #file is only on production server
+except ImportError: 
+    from local_settings import * #okay, we must be on development server
