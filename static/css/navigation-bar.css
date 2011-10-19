@@ -52,36 +52,3 @@
 	box-shadow: inset 0 0 1.5px 1.5px grey; 
 }
 
-/* Navigation images */
-.image-container { 
-	width: 160px;
-	height: 90px;
-	background-color: black;
-	
-	
-
-	
-	display:none;
-	position: absolute;
-	top: -94px;
-	
-	opacity:0.3;
-	-moz-opacity:0.3;
-	filter:alpha(opacity=30);
-	
-	z-index:75;
-}
-
-.nav-image {
-	display:none;
-	position: absolute;
-	top:-94px;
-	z-index:100;
-}
-
-
-#federal-logo, #federal-container {left: 164px;}
-#state-logo, #state-container {left:326px;}
-#news-logo, #news-container {left:488px;}
-#who-logo, #who-container {left: 650px;}
-#tools-logo, #tools-container {left: 812px;}

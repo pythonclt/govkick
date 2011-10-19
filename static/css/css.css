@@ -52,14 +52,14 @@ body {
 .IEPadder { padding: 5px;  }
 
 #sidebarTitle, #sidebarAdminTitle {
-	background: black;
-        position: relative; 
-        display:block;
-        top: 3px;
-	border: 1px solid #B9E3FF;
-	color: #FFFFFF;
+    position: relative; 
+    display:block;
+    top: 3px;
+    right: 3px;
+	color: black;
 	font-weight: bold;
-    	padding: 5px;
+    text-decoration: underline;
+    padding: 5px;
 	text-align: left; }
 
 #main {
@@ -70,6 +70,7 @@ body {
 	margin: 0 auto;
 	position: relative;
 	top: 20px;
+    bottom: 10px;
 	width: 980px; }
 
 	#main #sidebar {
@@ -80,19 +81,19 @@ body {
 		min-height: 400px;
 		position: relative;
 		width: 150px; 
-                padding: 3px; }
+        padding: 5px; }
 
 		#main #sidebar .sidebarChoices a {
-			border: 1px solid #eaf4f8;
-			color: #555555;
+			color: blue;
 			display: block;
 			font-weight: bold;
 			text-align: left;
-            		position:relative;
+            position:relative;
 			text-decoration: none; }
 
 
-			#main #sidebar .sidebarChoices a:hover { background-color: black; border: 1px solid #B9E3FF; display:block;}
+			#main #sidebar .sidebarChoices a:hover { text-decoration:
+            underline; display:block;}
 
 .sidebarChoicesSelected a { background-color: purple; border: 1px solid #B9E3FF;}
 
@@ -151,17 +152,18 @@ body {
 			width: 100%; }
 
 	#main #footer {
-		-moz-box-shadow: inset 0 0 2px 2px purple;
-		-webkit-box-shadow: inset 0 0 2px 2px purple;
+		-moz-box-shadow: inset 0px 2px 0px 0px purple;
+		-webkit-box-shadow: inset 0px 2px 0px 0px purple;
 		background-color: black;
-		border: 1px solid purple;
-		box-shadow: inset 0 0 2px 2px purple;
+		box-shadow: inset 0px 2px 0px 0px purple;
 		clear: both;
 		color: grey;
 		font-size: 10px;
 		padding: 10px;
 		position: relative;
-		width: auto; }
+		width: auto; 
+        min-height: 100px;}
+        
 
 
 .hover {
