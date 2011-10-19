@@ -10,7 +10,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'govkick.views.home', name='home'),
+    url(r'^$', 'govkick.views.home', name='home'),
     # url(r'^govkick/', include('govkick.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
