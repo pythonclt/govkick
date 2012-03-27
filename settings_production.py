@@ -3,6 +3,8 @@ Production Django settings for govkick project.
 These will be used by the deployed application.
 """
 from settings import *
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
         'default': {

@@ -6,7 +6,7 @@ import os
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 ROOT_DIR = os.path.split(PROJECT_DIR)[0]
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
